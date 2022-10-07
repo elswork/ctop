@@ -15,7 +15,6 @@ LABEL mantainer="Eloy Lopez <elswork@gmail.com>" \
     org.opencontainers.image.revision=$VCS_REF \
     org.opencontainers.image.licenses=MIT
 
-RUN apk update && apk upgrade
 RUN apk add --no-cache ctop
 WORKDIR /data
 ENTRYPOINT ["ctop"]
